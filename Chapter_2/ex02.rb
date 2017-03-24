@@ -1,7 +1,7 @@
 def hi_hi_goodbye
   # your code here
   greet = true
-
+   puts "(Enter '\ bye \' to exit !)"
   while greet
 
       if greet == 'bye'
@@ -11,12 +11,13 @@ def hi_hi_goodbye
     else
         puts "Enter a number!"
         greet = gets.chomp
+        puts "Hi " * greet.to_i
+
             if greet == 'bye'
               puts "Goodbye bro"
               exit
             end
-        puts "hi hi hi \nEnter a number!"
-        greet = gets.chomp
+
       end
     end
 end
